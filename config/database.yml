@@ -4,8 +4,8 @@ development:
   database: sweatwork_development
   pool: 5
   host: localhost
-  username: postgres
-  password: 3833105m
+  username: 
+  password: 
   port: 5432
 
 
@@ -15,6 +15,6 @@ development:
   database: sweatwork_test
   pool: 5
   host: localhost
-  username: postgres
-  password: 3833105m
+  username: 
+  password: 
   port: 5432
