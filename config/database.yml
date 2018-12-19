@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: sweatwork_development
+  pool: 5
+  host: localhost
+  username: postgres
+  password: 3833105m
+  port: 5432
+
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: sweatwork_test
+  pool: 5
+  host: localhost
+  username: postgres
+  password: 3833105m
+  port: 5432
