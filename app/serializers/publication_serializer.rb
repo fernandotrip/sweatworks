@@ -1,3 +1,3 @@
 class PublicationSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :birth
+  attributes :id, :body, :title, :publisdate
 end
