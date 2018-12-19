@@ -2,12 +2,12 @@ class V1::AuthorsController < ApplicationController
     before_action :set_author, only: [:show, :update, :destroy]
 
     def index
-      @authors = author.all
+      @authors = Author.all
       render json: @authors, status: :ok
     end
   
     def create
-      @author = author.create!(author_params)
+      @author = Author.create!(author_params)
       render json: @author, status: :created
     end
   
@@ -28,7 +28,7 @@ class V1::AuthorsController < ApplicationController
     private
   
     def set_author
-      @author = author.find(params[:id])
+      @author = Author.find(params[:id])
     end
   
     def author_params

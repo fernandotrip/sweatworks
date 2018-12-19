@@ -2,12 +2,12 @@ class V1::PublicationsController < ApplicationController
   before_action :set_publication, only: [:index, :create, :destroy, :show, :edit, :update]
 
   def index
-    @publications = @publication.publications
+    @publications = @author.publications
     render json: @publications, status: :ok
   end
 
   def create
-    @publication = @publication.publications.create(publication_params)
+    @publication = @author.publications.create(publication_params)
     head :no_content
   end
   
